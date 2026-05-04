@@ -10,6 +10,7 @@ int main() {
     char codigo1[50], codigo2[50];
     char estado1[50], estado2[50];
     char nome1[50], nome2[50];
+    float media_pib1, media_densidade1, media_pib2, media_densidade2;
 
     
     
@@ -70,6 +71,10 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Pontos Turisticos: %d\n", pontos1);
+    media_densidade1 = (populacao1 / area1);
+    printf("Densidade populacional: %.2f hab/km²\n", media_densidade1);
+    media_pib1 = (pib1 / populacao1) * 1000000000;
+    printf("PIB per capita: %.2f reais\n", media_pib1);
 
 
     // carta2
@@ -82,4 +87,8 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Pontos Turisticos: %d\n", pontos2);
-} 
+    media_densidade2 = (populacao2 / area2);
+    printf("Densidade populacional: %.2f hab/km²\n", media_densidade2);
+    media_pib2 = (pib2 / populacao2) * 1000000000;
+    printf("PIB per capita: %.2f reais\n", media_pib2);
+}
